@@ -19,8 +19,8 @@
 //     return "Wrong, please enter a number between 1 and 7";
 //   }
 // }
-function whatday(num) { 
-  switch(num) {
+function whatDay(num) {
+  switch (num) {
     case 1:
       return "Sunday";
     case 2:
@@ -36,7 +36,7 @@ function whatday(num) {
     case 7:
       return "Saturday";
     default:
-      return 'Wrong, please enter a number between 1 and 7';
+      return "Wrong, please enter a number between 1 and 7";
   }
 }
-console.log(whatday(1));
+console.log(whatDay(1));
