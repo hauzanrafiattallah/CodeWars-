@@ -6,4 +6,6 @@ function evenOrOdd(number) {
   }
 }
 
-console.log(evenOrOdd());
+
+
+
