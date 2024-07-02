@@ -1,0 +1,40 @@
+procedure editDataSmartphone(in/out arr, in jumlahTerisi, index, field, newValue)
+    if index < 0 or index >= jumlahTerisi then
+        output ("Data tidak ditemukan.")
+        return
+
+    switch field
+        case "Merek":
+            if newValue is string then
+                arr[index].Merek <- newValue
+            else
+                output("Tipe data untuk Merek harus string.")
+            endif
+        case "Model":
+            if newValue is string then
+                arr[index].Model <- newValue
+            else
+                output("Tipe data untuk Model harus string.")
+            endif
+        case "TahunRilis":
+            if newValue is integer then
+                arr[index].TahunRilis <- newValue
+            else
+                output("Tipe data untuk TahunRilis harus integer.")
+            endif
+        case "KapasitasRAM":
+            if newValue is integer then
+                arr[index].KapasitasRAM <- newValue
+            else
+                output "Tipe data untuk KapasitasRAM harus integer."
+            endif
+        case "KapasitasBaterai":
+            if newValue is integer then
+                arr[index].KapasitasBaterai <- newValue
+            else
+                output("Tipe data untuk KapasitasBaterai harus integer.")
+            endif
+        default:
+            output("Field tidak dikenali.")
+        endswitch
+endprocedure
